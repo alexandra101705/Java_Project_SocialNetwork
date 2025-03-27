@@ -24,9 +24,6 @@ import java.io.IOException;
 
 public class HelloApplication extends Application {
 
-    final String url = "jdbc:postgresql://localhost:5432/postgres";
-    final String user = "postgres";
-    final String password = "1005";
 
     UserDataBaseRepository userDataBaseRepo = new UserDataBaseRepository(url,user,password, new UserValidator());
     FriendshipDataBaseRepository friendshipDataBaseRepository = new FriendshipDataBaseRepository(url, user, password, new FriendshipValidator());
